@@ -1,0 +1,182 @@
+.header-main {
+    display: block;
+    background-color: #282850;
+    padding: 15px  15px  15px  54px;
+    .h1-aboutUs {
+        font-weight: 400;
+        color: #ffffff;
+        font-size: 48px;
+        line-height: 56px;
+    }
+}
+
+.about-us-content {
+    background: #191a39;
+    display: flex;
+    flex-direction: row;
+    .left-menu {
+        width: 30%;
+        padding: 31px 15px 0 54px;
+        .left-menu-item {
+            a {
+                  color: #7E849A;
+                  font-size: 15px;
+                  line-height: 172.49%;
+            }
+        }
+        button {
+           margin-top: 25px;
+           padding: 15px 30px;
+           border-radius: 4px;
+           color: #ffffff;
+           background: #237BEF;
+           font-size: 15px;
+           line-height: 18px;
+        }
+    }
+    .main-content {
+        width: 70%;
+        padding: 0px 15px;
+        .description-text {
+            margin-top: 15px;
+            max-width: 636px;
+            p {
+                font-size: 15px;
+                line-height: 18px;
+                color: #E5E5E5;
+            }
+            .why-exrates-link {
+                margin-top: 12px;
+                a {
+                    color: #237BEF;
+                    font-size: 15px;
+                    line-height: 18px;
+                }
+            }
+
+            hr {
+                display: block;
+                border: 1px solid #1D365A;
+            }
+        }
+
+        .benefits-wp {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            width: 636px;
+            .benefits-item{
+                width: 50%;
+                min-height: 7.9em;
+                display: flex;
+                flex-direction: row;
+
+                .benefits-icon-wp {
+                    width: 30%;
+                    display: block;
+                    text-align: center;
+                }
+                .benetits-description {
+                    width: 70%;
+                    .item-header {
+                        font-size: 18px;
+                        line-height: 21px;
+                        color: #ffffff;
+                    }
+                    .item-description {
+                        font-weight: 300;
+                        padding-top: 10px;
+                        font-size: 14px;
+                        line-height: 127.3%;
+                        color: #E5E5E5 !important;
+                    }
+                }
+            }
+        }
+
+
+       .form-wp {
+            width: 636px;
+            margin: 15px 0 60px 0;
+            form {
+            	display: flex;
+            	flex-direction: column;
+            	}
+            .title{
+                margin-bottom: 20px;
+             h3{
+               font-weight: 400;
+               font-size: 15px;
+               line-height: 18px;
+               text-transform: uppercase;
+               color: #237BEF;
+                }
+               }
+            .radio-wr{
+                display: flex;
+                flex-direction: row;
+            	}
+            	.radio-item{
+            		display: flex;
+            		align-items: center;
+            		margin-bottom: .8em;
+            		width: 50%;
+            		@media(max-width: 568px){
+            			font-size: 1.2em;
+            		}
+            		input{
+            			&:checked{
+            				&+.check{
+            					&::after{
+            						opacity: 1;
+            					}
+            				}
+            			}
+            		}
+            		.check{
+            			min-width: 23px;
+            			min-height: 23px;
+            			border: 1px solid #7E849A;
+            			border-radius: 50%;
+            			margin-right: .8em;
+            			position: relative;
+            			&::after{
+            				content: '';
+            				position: absolute;
+            				top: 0;
+            				bottom: 0;
+            				right: 0;
+            				left: 0;
+            				width: 13px;
+            				height: 13px;
+            				background: #237BEF;
+            				margin: auto;
+            				opacity: 0;
+            				transition: .3s;
+            				border-radius: 50%;
+            			}
+            		}
+            		.check-txt{
+            			font-weight: 300;
+            			font-size: .75em;
+            			line-height: 1.2;
+            			color: #AAB1C4;
+            			padding-top: .1em;
+            		}
+            	}
+
+            	.button-wr{
+            		.empty-btn{
+                        min-width: 300px;
+                        padding: 20px;
+                        color: #ffffff;
+                        border: 1px solid #237BEF;
+                        box-sizing: border-box;
+                        border-radius: 4px;
+                        font-size: 15px;
+                        line-height: 18px;
+            		}
+            	}
+       }
+    }
+}
