@@ -16,7 +16,7 @@ function Paralax(parent, element,transition, animationSpeed, offset, adaptive){
 			if(offset){
 				element.setAttribute("style", "top:" + elemOffset + ";");
 			}
-			TweenMax.to(element, transition, {y: -scrollSize / (animationSpeed * sizeCalc)});
+			TweenMax.to(element, transition, {y: scrollSize / (animationSpeed * sizeCalc)});
 		}
 	}
 	if(!(window.innerWidth > adaptiveMod)){
@@ -28,7 +28,7 @@ function Paralax(parent, element,transition, animationSpeed, offset, adaptive){
 document.addEventListener('scroll', function (e) {
 	var ParalaxParent = document.querySelector(".fs-image-container");
 	var ParalaxElement = document.querySelector(".fs-image-container img");
-	Paralax(ParalaxParent, ParalaxElement, 0.1, 6, false,1);
+	Paralax(ParalaxParent, ParalaxElement, 0.1, 3, false,1);
 });
 
 // end parallax function
@@ -61,8 +61,8 @@ $(".wrap-input__input").focusout(function(){
 //open menu script
 
 $(".burger").click(function(){
-	$(".navigation").toggleClass("active");
-	if($(".navigation").hasClass("active")){
+	$(".mobile-menu").toggleClass("active");
+	if($(".mobile-menu").hasClass("active")){
 		$("body").addClass("modal-open");
 	}
 	else{
@@ -202,6 +202,7 @@ $("form").on("submit", function(e){
 // modal close script
 $(".close-trigger").click(function(){
 	$(".modal").removeClass("active");
+	$(".mobile-menu").removeClass("active");
 	$("body").removeClass("modal-open");
 })
 
