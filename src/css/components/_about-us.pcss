@@ -1,0 +1,209 @@
+
+.about-us-content {
+    background: #191a39;
+    display: flex;
+    flex-direction: row;
+    @media(max-width: 992px){
+       flex-direction: column;
+    }
+    .sidebar {
+        width: 30%;
+        padding: 1.55em .75em 0 2.7em;
+        @media(max-width: 992px){
+            padding: 1em 0 0 0;
+            min-width: 100%;
+            width: 100%;
+            .button-wr {
+                margin: 0 auto;
+            }
+        }
+        .button-wr {
+            margin: 0;
+        }
+    }
+    .main-content {
+        width: 70%;
+        padding: 0px .75em;
+         @media(max-width: 992px){
+             width: 100%;
+         }
+        .description-text {
+            margin-top: .75em;
+            max-width: 636px;
+            @media(max-width: 992px){
+               width: 90%;
+               max-width: 90%;
+               margin: auto;
+               p{
+                    text-align: center;
+               }
+            }
+            p {
+                font-size: .75em;
+                line-height: 18px;
+                color: #E5E5E5;
+            }
+            .why-exrates-link {
+                margin-top: .6em;
+                 @media(max-width: 992px){
+                    display: flex;
+                    margin-top: 2em;
+                    a {
+                        margin: auto;
+
+                    }
+                 }
+                a {
+                    color: #237BEF;
+                    font-size: .75em;
+                    line-height: 18px;
+                }
+            }
+
+            hr {
+                display: block;
+                border: 1px solid #1D365A;
+            }
+        }
+
+        .benefits-wp {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            width: 636px;
+            @media(max-width: 992px){
+               width: 90%;
+               margin: auto;
+            }
+            .benefits-item{
+                width: 50%;
+                min-height: 7.9em;
+                display: flex;
+                flex-direction: row;
+                @media(max-width: 520px){
+                    width: 90%
+                }
+                .benefits-icon-wp {
+                    width: 30%;
+                    display: block;
+                    text-align: center;
+                }
+                .benetits-description {
+                    width: 70%;
+                    .item-header {
+                        font-size: .9em;
+                        line-height: 21px;
+                        color: #ffffff;
+                    }
+                    .item-description {
+                        font-weight: 300;
+                        padding-top: .5em;
+                        font-size: .7em;
+                        line-height: 127.3%;
+                        color: #E5E5E5 !important;
+                    }
+                }
+            }
+        }
+
+
+       .form-wp {
+            width: 636px;
+            margin: .75em 0 3em 0;
+            @media(max-width: 992px){
+               width: 90%;
+               margin: auto;
+               .title {
+                  margin: 1em auto 1em auto;
+               }
+            }
+            form {
+            	display: flex;
+            	flex-direction: column;
+            	}
+            .title{
+                margin-bottom: 1em;
+             h3{
+               font-weight: 400;
+               font-size: .75em;
+               line-height: 18px;
+               text-transform: uppercase;
+               color: #237BEF;
+                }
+               }
+            .radio-wr{
+                display: flex;
+                flex-direction: row;
+            	}
+            	.radio-item{
+            		display: flex;
+            		align-items: center;
+            		margin-bottom: .8em;
+            		width: 50%;
+            		@media(max-width: 568px){
+            			font-size: 1.2em;
+            		}
+            		input{
+            			&:checked{
+            				&+.check{
+            					&::after{
+            						opacity: 1;
+            					}
+            				}
+            			}
+            		}
+            		.check{
+            			min-width: 23px;
+            			min-height: 23px;
+            			border: 1px solid #7E849A;
+            			border-radius: 50%;
+            			margin-right: .8em;
+            			position: relative;
+            			&::after{
+            				content: '';
+            				position: absolute;
+            				top: 0;
+            				bottom: 0;
+            				right: 0;
+            				left: 0;
+            				width: 13px;
+            				height: 13px;
+            				background: #237BEF;
+            				margin: auto;
+            				opacity: 0;
+            				transition: .3s;
+            				border-radius: 50%;
+            			}
+            		}
+            		.check-txt{
+            			font-weight: 300;
+            			font-size: .75em;
+            			line-height: 1.2;
+            			color: #AAB1C4;
+            			padding-top: .1em;
+            		}
+            	}
+
+            	.button-wr{
+            	    display: flex;
+            	    margin-bottom: 3em;
+            		.empty-btn{
+                        min-width: 300px;
+                        padding: 1em;
+                        color: #ffffff;
+                        border: 1px solid #237BEF;
+                        box-sizing: border-box;
+                        border-radius: 4px;
+                        font-size: .75em;
+                        line-height: 18px;
+                        @media(max-width: 992px){
+                            margin: auto;
+                        }
+                        @media(max-width: 520px){
+                            width: 100%;
+                        }
+            		}
+            	}
+       }
+    }
+}
