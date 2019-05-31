@@ -81,6 +81,7 @@ button{
 	border: none;
 	cursor: pointer;
 	display: block;
+	border: 1px solid #237BEF;
 	&.reverse{
 		border: 1px solid #237BEF;
 		background-color: transparent;
@@ -388,3 +389,28 @@ li{
 	}
 
 }
+
+.fs-image-container{
+		overflow: hidden;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		img{
+			min-height: 125%;
+			min-width: 100%;
+			top: -20%;
+			position: relative;
+			@media(max-width: 992px){
+				// height: 100%;
+				min-height: unset;
+				position: absolute;
+				top: -100%;
+				bottom: -100%;
+				right: -100%;
+				left: -100%;
+				margin: auto;
+			}
+		}
+	}

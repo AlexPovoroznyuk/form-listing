@@ -169,35 +169,46 @@
                     <h3>Get report about your coin</h3>
                 </div>
                 <form action="/send.php">
+                    <div class="checkbox-wr">
+                        <div class="check-item">
+                            <input type="radio" value="IEO" id="IEO" name="formType" checked>
+                            <label class="indicator" for="IEO"></label>
+                            <label class="label-txt" for="IEO">I need to conduct an IEO</label>
+                        </div>
+                        <div class="check-item">
+                            <input type="radio" value="listing" id="listing" name="formType">
+                            <label class="indicator" for="listing"></label>
+                            <label class="label-txt" for="listing">I need to list a coin</label>
+                        </div>
+                    </div>      
                     <div class="wrap-input input-item popup__wrap-input">
                         <input class="wrap-input__input ng-dirty ng-valid ng-touched form-input reqiered-field" autocomplete="new-password" type="text" name="name" id="name">
-                        <label class="wrap-input__label" for="">Project name</label>
+                        <label class="wrap-input__label" for="name">Name*</label>
                         <label class="error" for="name"><span class="standart-text"></span></label>
                     </div>  
                     <div class="wrap-input input-item popup__wrap-input">
-                        <input class="wrap-input__input ng-dirty ng-valid ng-touched form-input reqiered-field" autocomplete="new-password" type="text" name="telegram" id="telegram">
-                        <label class="wrap-input__label" for="telegram">Your Telegram</label>
+                        <input class="wrap-input__input ng-dirty ng-valid ng-touched form-input" autocomplete="new-password" type="text" name="telegram" id="telegram">
+                        <label class="wrap-input__label" for="telegram">Telegram</label>
                         <label class="error" for="telegram"><span class="standart-text"></span></label>
                     </div>
-                    <div class="checkbox-wr">
-                        <div class="check-item">
-                            <input type="checkbox" value="Listing on 5 exchanges" id="exchanges5" name="ListingOnExchanges">
-                            <label class="indicator" for="exchanges5"></label>
-                            <label class="label-txt" for="exchanges5">Listing on 5 exchanges</label>
-                        </div>
-                        <div class="check-item">
-                            <input type="checkbox" value="Listing on Exrates" id="exrates" name="ListingOnExrates">
-                            <label class="indicator" for="exrates"></label>
-                            <label class="label-txt" for="exrates">Listing on Exrates   </label>
-                        </div>
-                        <div class="check-item">
-                            <input type="checkbox" value="Listing + Marketing" id="marketing" name="ListingMarketing">
-                            <label class="indicator" for="marketing"></label>
-                            <label class="label-txt" for="marketing">Listing + Marketing</label>
-                        </div>
-                    </div>      
+                    <div class="wrap-input input-item popup__wrap-input">
+                        <input class="wrap-input__input ng-dirty ng-valid ng-touched form-input reqiered-field" autocomplete="new-password" type="text" name="email" id="email">
+                        <label class="wrap-input__label" for="email">Email*</label>
+                        <label class="error" for="email"><span class="standart-text"></span></label>
+                    </div>
+                    <div class="wrap-input input-item popup__wrap-input">
+                        <input class="wrap-input__input ng-dirty ng-valid ng-touched form-input reqiered-field" autocomplete="new-password" type="text" name="companyName" id="companyName">
+                        <label class="wrap-input__label" for="companyName">Company name*</label>
+                        <label class="error" for="companyName"><span class="standart-text"></span></label>
+                    </div>
+                    <div class="wrap-input input-item popup__wrap-input">
+                        <input class="wrap-input__input ng-dirty ng-valid ng-touched form-input" autocomplete="new-password" type="text" name="linkToTheWebsite" id="linkToTheWebsite">
+                        <label class="wrap-input__label" for="linkToTheWebsite">Link to the website</label>
+                        <label class="error" for="linkToTheWebsite"><span class="standart-text"></span></label>
+                    </div>
+                    
                     <div class="button-wr">
-                        <button class="standart-btn reverse" type="submit"><span>Get personal offer</span></button>
+                        <button class="standart-btn reverse" type="submit"><span>Submit</span></button>
                     </div>
                 </form>
             </div>
