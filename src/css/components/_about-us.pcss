@@ -3,32 +3,41 @@
     background: #191a39;
     display: flex;
     flex-direction: row;
-    .left-menu {
+    @media(max-width: 992px){
+       flex-direction: column;
+    }
+    .sidebar {
         width: 30%;
         padding: 1.55em .75em 0 2.7em;
-        .left-menu-item {
-            a {
-                  color: #7E849A;
-                  font-size: 0.75em;
-                  line-height: 172.49%;
+        @media(max-width: 992px){
+            padding: 1em 0 0 0;
+            min-width: 100%;
+            width: 100%;
+            .button-wr {
+                margin: 0 auto;
             }
         }
-        button {
-           margin-top: 1.25em;
-           padding: .75em 1.5em;
-           border-radius: 4px;
-           color: #ffffff;
-           background: #237BEF;
-           font-size: .75em;
-           line-height: 18px;
+        .button-wr {
+            margin: 0;
         }
     }
     .main-content {
         width: 70%;
         padding: 0px .75em;
+         @media(max-width: 992px){
+             width: 100%;
+         }
         .description-text {
             margin-top: .75em;
             max-width: 636px;
+            @media(max-width: 992px){
+               width: 90%;
+               max-width: 90%;
+               margin: auto;
+               p{
+                    text-align: center;
+               }
+            }
             p {
                 font-size: .75em;
                 line-height: 18px;
@@ -36,6 +45,14 @@
             }
             .why-exrates-link {
                 margin-top: .6em;
+                 @media(max-width: 992px){
+                    display: flex;
+                    margin-top: 2em;
+                    a {
+                        margin: auto;
+
+                    }
+                 }
                 a {
                     color: #237BEF;
                     font-size: .75em;
@@ -54,12 +71,18 @@
             flex-wrap: wrap;
             align-items: flex-start;
             width: 636px;
+            @media(max-width: 992px){
+               width: 90%;
+               margin: auto;
+            }
             .benefits-item{
                 width: 50%;
                 min-height: 7.9em;
                 display: flex;
                 flex-direction: row;
-
+                @media(max-width: 520px){
+                    width: 90%
+                }
                 .benefits-icon-wp {
                     width: 30%;
                     display: block;
@@ -87,6 +110,13 @@
        .form-wp {
             width: 636px;
             margin: .75em 0 3em 0;
+            @media(max-width: 992px){
+               width: 90%;
+               margin: auto;
+               .title {
+                  margin: 1em auto 1em auto;
+               }
+            }
             form {
             	display: flex;
             	flex-direction: column;
@@ -155,6 +185,8 @@
             	}
 
             	.button-wr{
+            	    display: flex;
+            	    margin-bottom: 3em;
             		.empty-btn{
                         min-width: 300px;
                         padding: 1em;
@@ -164,6 +196,12 @@
                         border-radius: 4px;
                         font-size: .75em;
                         line-height: 18px;
+                        @media(max-width: 992px){
+                            margin: auto;
+                        }
+                        @media(max-width: 520px){
+                            width: 100%;
+                        }
             		}
             	}
        }
