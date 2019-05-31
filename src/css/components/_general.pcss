@@ -4,6 +4,9 @@
 	font-family: roboto;
 
 }
+main{
+	background-color: #191A39;
+}
 
 html{
 	font-size: 20px;
@@ -202,10 +205,10 @@ li{
 	@media(max-width: 1200px){
 		padding: .9em 15px;
 
-		}
-		@media(max-width: 992px){
-			text-align: center;
-		}
+	}
+	@media(max-width: 992px){
+		text-align: center;
+	}
 	h2{
 		font-weight: 400;
 		font-size: 2.4em;
@@ -215,97 +218,173 @@ li{
 }
 
 
-	.sidebar{
-		width: 7.8em;
-		margin-right: 3.25em;
-		@media(max-width: 1024px){
-			margin-right: 2em;
-		}
-		@media(max-width: 992px){
-			margin-right: 0;
-			margin-bottom: 3em;
-			font-size: 1.3em;
-			width: auto;
-		}
-		.sidebar-list{
+.sidebar{
+	width: 7.8em;
+	margin-right: 3.25em;
+	@media(max-width: 1024px){
+		margin-right: 2em;
+	}
+	@media(max-width: 992px){
+		margin-right: 0;
+		margin-bottom: 3em;
+		font-size: 1.3em;
+		width: auto;
+	}
+	.sidebar-list{
 
+	}
+	.button-wr{
+		width: 7.8em;
+		margin: 0 auto;
+		a{
+			padding: .7em;
 		}
-		.button-wr{
-			width: 7.8em;
-			margin: 0 auto;
-			a{
-				padding: .7em;
+		span{
+			font-size: .75em;
+		}
+	}
+	li{
+		display: flex;
+		justify-content: flex-start;
+		@media(max-width: 992px){
+
+			justify-content: center;
+		}
+		&.icon-lnk{
+			margin-top: .3em;
+			&:last-child{
+				margin-top: 0;
+				margin-bottom: 1em;
 			}
 			span{
-				font-size: .75em;
+				&::after{
+					display: none;
+				}
 			}
 		}
-		li{
+		a{
 			display: flex;
-			justify-content: flex-start;
+			align-items: center;
+			&:hover, &.active{
+				span{
+					color: #fff;
+					&::after{
+						transform: translateY(0);
+						opacity: 1;
+					}
+				}
+			}
 			@media(max-width: 992px){
 
-					justify-content: center;
-				}
-			&.icon-lnk{
-				margin-top: .3em;
-				&:last-child{
-					margin-top: 0;
-					margin-bottom: 1em;
-				}
-				span{
-					&::after{
-						display: none;
-					}
-				}
+				justify-content: center;
 			}
-			a{
-				display: flex;
-				align-items: center;
-				&:hover, &.active{
-					span{
-						color: #fff;
-						&::after{
-							transform: translateY(0);
-							opacity: 1;
-						}
-					}
-				}
-				@media(max-width: 992px){
-
-					justify-content: center;
-				}
-			}
-			.icon{
-				margin-right: .3em;
-				font-size: inherit;
-				svg{
-					display: block;
-
-
-				}
-			}
-			span{
-				font-weight: 500;
-				font-size: .75em;
-				line-height: 1.85;
-				color: #7E849A;
+		}
+		.icon{
+			margin-right: .3em;
+			font-size: inherit;
+			svg{
 				display: block;
-				position: relative;
+
+
+			}
+		}
+		span{
+			font-weight: 500;
+			font-size: .75em;
+			line-height: 1.85;
+			color: #7E849A;
+			display: block;
+			position: relative;
+			transition: .3s;
+			&::after{
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				height: 2px;
+				width: 100%;
+				background: #237BEF;
+				transform: translateY(3px);
+				opacity: 0;
 				transition: .3s;
-				&::after{
-					content: '';
-					position: absolute;
-					bottom: 0;
-					left: 0;
-					right: 0;
-					height: 2px;
-					width: 100%;
-					background: #237BEF;
-					transform: translateY(3px);
-					opacity: 0;
-					transition: .3s;
-				}
 			}
 		}
 	}
+}
+
+
+
+.benefits{
+	.button-wr{	
+		@media(max-width: 520px){
+			max-width: 11em;
+			margin: .8em auto 0;
+		}
+		a{
+			padding: .7em .7em;
+		}
+		span{
+			font-weight: 500;
+			font-size: .7em;
+			line-height: 1.1;
+			color: #FFFFFF;
+		}
+	}	
+
+
+	.benefits-item-wr	{
+		display: flex;
+		flex-wrap: wrap;
+
+	}
+	.benefits-item{
+		width: 50%;
+		min-height: 8em;
+		padding: 1.7em .9em .65em;
+		background: #191A39;
+		border: 1px solid #484E65;
+		margin-left: -1px;
+		margin-top: -1px;
+		&.large-item{
+			background: #252543;
+			border: 1px solid #39394C;
+			box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.4);
+			padding: 1em 1.3em .8em;
+		}
+		@media(max-width: 520px){
+			width: 100%;
+			padding: 0;
+			background: transparent;
+			border: none;
+			min-height: unset;
+			text-align: center;
+			font-size: 1.2em;
+			margin: 0 auto 1.6em;
+		}
+	}
+	.title-b{
+		margin-bottom: 1.35em;
+		h5{
+			font-weight: 500;
+			font-size: .75em;
+			line-height: .95;
+			text-transform: uppercase;
+			color: #237BEF;
+		}
+	}
+	.description{
+		margin-bottom: .8em;
+		@media(max-width: 520px){
+			margin-bottom: 0;
+		}
+		p{
+			font-weight: 400;
+			font-size: .7em;
+			line-height: 1.1;
+			color: #AAB1C4;
+
+		}
+	}
+
+}
