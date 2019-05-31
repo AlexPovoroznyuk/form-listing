@@ -13,6 +13,7 @@ Main style file
 @import "./components/_general.pcss";
 @import "./components/_header.pcss";
 @import "./components/_footer.pcss";
+@import "components/_about-us.pcss";
 
 
 /* variable content */
