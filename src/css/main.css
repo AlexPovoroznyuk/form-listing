@@ -13,7 +13,6 @@ Main style file
 @import "./components/_general.pcss";
 @import "./components/_header.pcss";
 @import "./components/_footer.pcss";
-@import "components/_about-us.pcss";
 
 
 /* variable content */
@@ -24,4 +23,6 @@ Main style file
 @import "./components/_privacy-policy.pcss";
 @import "./components/_terms-of-use.pcss";
 @import "./components/_advisor-page.pcss";
+@import "components/_about-us.pcss";
+@import "components/_support-center.pcss";
 @import "./components/_become-advisor.pcss";
