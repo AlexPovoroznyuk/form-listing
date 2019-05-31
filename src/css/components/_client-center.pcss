@@ -6,61 +6,47 @@
 		display: flex;
 		padding: 1.5em 2.8em;
 		background-color: #191A39;
+		@media(max-width: 1200px){
+			padding: 1.5em 15px;
+			@media(max-width: 992px){
+				flex-direction: column;
+				align-items: center;
+				font-size: 1.3em;
+			}
+
+		}
 	}
 	.top-title{
 		h2{
 
 		}
 	}
-	.sidebar{
-		min-width: 7.8em;
-		margin-right: 3.25em;
-		.sidebar-list
 
-		li{
-			&.icon-lnk{
-				margin-top: .3em;
-				&:last-child{
-					margin-top: 0;
-					margin-bottom: 1em;
-				}
-			}
-			a{
-				display: flex;
-				align-items: center;
-			}
-			.icon{
-				margin-right: .3em;
-				font-size: inherit;
-				svg{
-					display: block;
-
-
-				}
-			}
-			span{
-				font-weight: 500;
-				font-size: .75em;
-				line-height: 1.85;
-				color: #7E849A;
-				display: block;
-			}
-		}
-	}
 	.content-part{
-		max-width: 28em;
+		max-width: 58%;
 		margin-right: auto;
+		@media(max-width: 1440px){
+			max-width: 28em;
+		}
+		@media(max-width: 992px){
+			margin: 0 auto 2em;
+		}
 		.contact-sales{
 
 		}
 		.title-wr{
 			margin-bottom: 1.3em;
+			
 			h4{
 				font-weight: 500;
 				font-size: .75em;
 				line-height: 1.2;
 				text-transform: uppercase;
 				color: #237BEF;
+				@media(max-width: 992px){
+					text-align: center;
+					font-size: 1.1em;
+				}
 			}
 		}
 		.contact-sales-item-wr{
@@ -69,9 +55,17 @@
 			flex-wrap: wrap;
 		}
 		.contact-sales-item{
-			width: 50%;
+			width: 33.3333%;
 			display: flex;
 			margin-bottom: 2.5em;
+			@media(max-width: 1440px){
+			width: 50%;
+		}
+			@media(max-width: 520px){
+				width: 100%;
+				justify-content: center;
+				font-size: 1.2em;
+			}
 		}
 
 		.avatar{
@@ -141,6 +135,10 @@
 		}
 		.benefits{
 			.button-wr{	
+				@media(max-width: 520px){
+					max-width: 11em;
+					margin: .8em auto 0;
+				}
 				a{
 					padding: .7em .7em;
 				}
@@ -168,6 +166,22 @@
 			padding: 1.7em .9em .65em;
 			background: #191A39;
 			border: 1px solid #484E65;
+			&.large-item{
+				background: #252543;
+				border: 1px solid #39394C;
+				box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.4);
+				padding: 1em 1.3em .8em;
+			}
+			@media(max-width: 520px){
+				width: 100%;
+				padding: 0;
+				background: transparent;
+				border: none;
+				min-height: unset;
+				text-align: center;
+				font-size: 1.2em;
+				margin: 0 auto 1.6em;
+			}
 		}
 		.title-b{
 			margin-bottom: 1.35em;
@@ -181,6 +195,9 @@
 		}
 		.description{
 			margin-bottom: .8em;
+			@media(max-width: 520px){
+				margin-bottom: 0;
+			}
 			p{
 				font-weight: 400;
 				font-size: .7em;
@@ -191,9 +208,19 @@
 		}
 	}
 	.banners-part{
+		margin-left: 2em;
+		@media(max-width: 992px){
+			max-width: 28em;
+			width: 100%;
+			margin-left: 0;
+		}
+
 		.banner-item{
 			margin-bottom: 1.25em;
 			width: 17em;
+			@media(max-width: 992px){
+				width: 100%;
+			}
 			img{
 				width: 100%;
 			}

@@ -199,6 +199,13 @@ li{
 .top-title{
 	padding: .9em 2.8em;
 	background: #282850;
+	@media(max-width: 1200px){
+		padding: .9em 15px;
+
+		}
+		@media(max-width: 992px){
+			text-align: center;
+		}
 	h2{
 		font-weight: 400;
 		font-size: 2.4em;
@@ -206,3 +213,99 @@ li{
 		color: #FFFFFF;
 	}
 }
+
+
+	.sidebar{
+		width: 7.8em;
+		margin-right: 3.25em;
+		@media(max-width: 1024px){
+			margin-right: 2em;
+		}
+		@media(max-width: 992px){
+			margin-right: 0;
+			margin-bottom: 3em;
+			font-size: 1.3em;
+			width: auto;
+		}
+		.sidebar-list{
+
+		}
+		.button-wr{
+			width: 7.8em;
+			margin: 0 auto;
+			a{
+				padding: .7em;
+			}
+			span{
+				font-size: .75em;
+			}
+		}
+		li{
+			display: flex;
+			justify-content: flex-start;
+			@media(max-width: 992px){
+
+					justify-content: center;
+				}
+			&.icon-lnk{
+				margin-top: .3em;
+				&:last-child{
+					margin-top: 0;
+					margin-bottom: 1em;
+				}
+				span{
+					&::after{
+						display: none;
+					}
+				}
+			}
+			a{
+				display: flex;
+				align-items: center;
+				&:hover{
+					span{
+						color: #fff;
+						&::after{
+							transform: translateY(0);
+							opacity: 1;
+						}
+					}
+				}
+				@media(max-width: 992px){
+
+					justify-content: center;
+				}
+			}
+			.icon{
+				margin-right: .3em;
+				font-size: inherit;
+				svg{
+					display: block;
+
+
+				}
+			}
+			span{
+				font-weight: 500;
+				font-size: .75em;
+				line-height: 1.85;
+				color: #7E849A;
+				display: block;
+				position: relative;
+				transition: .3s;
+				&::after{
+					content: '';
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					right: 0;
+					height: 2px;
+					width: 100%;
+					background: #237BEF;
+					transform: translateY(3px);
+					opacity: 0;
+					transition: .3s;
+				}
+			}
+		}
+	}
