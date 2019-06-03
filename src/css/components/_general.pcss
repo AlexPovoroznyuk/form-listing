@@ -4,6 +4,9 @@
 	font-family: roboto;
 
 }
+
+
+
 main{
 	background-color: #191A39;
 }
@@ -136,7 +139,7 @@ li{
 	border-radius: 4px;
 	font-size: 14px;
 	background-color: transparent;
-	color: #fff;
+	color: #aab1c4;
 	border-color: rgba(148,194,255,.5);
 }
 
@@ -224,9 +227,9 @@ li{
 
 .sidebar{
 	width: 7.8em;
-	margin-right: 3.25em;
-	    position: sticky;
-    top: 1.5em;
+	margin-right: 8.5em;
+	position: sticky;
+	top: 1.5em;
 	@media(max-width: 1024px){
 		margin-right: 2em;
 	}
@@ -387,7 +390,8 @@ li{
 		margin-top: -1px;
 		&.large-item{
 			background: #252543;
-			border: 1px solid #39394C;
+			border: none;
+			position: relative;
 			box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.4);
 			padding: 1em 1.3em .8em;
 		}
@@ -544,28 +548,31 @@ form{
 
 
 .views{
-	    position: absolute;
-    z-index: 2;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(25, 26, 57, 0.87);
-    transition: .3s;
-    opacity: 1;
-    pointer-events: auto;
-    &:empty{
-    	opacity: 0;
-    	pointer-events:none;
-    }
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(25, 26, 57, 0.87);
+	transition: .3s;
+	opacity: 1;
+	pointer-events: auto;
+	&:empty{
+		opacity: 0;
+		pointer-events:none;
+	}
 }
 
 
 a:not([href]):not([tabindex]), a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
-    color: #fff;
-    text-decoration: none;
+	color: #fff;
+	text-decoration: none;
 }
 
+#launcher{
+	display: none!important;
+}

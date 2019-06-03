@@ -1,7 +1,7 @@
 <header class="header">
 	<div class="header-inner">
 		<div class="logo-wr">
-			<img src="img/pics/logo-header.svg" alt="logo">
+			<img src="img/pics/logo-exrates.svg" alt="logo">
 		</div>
 		<div class="menu-wr">
 			<div class="left-part">
@@ -9,9 +9,50 @@
 					<ul>
 						<li>
 							<a href="https://exrates.me/dashboard"><span>trade</span></a>
-						</li>	
+						</li>
 						<li>
-							<a href="/"><span>About us</span></a>
+							<div class="drop">
+								<a href="#"><span>Funds</span></a>
+								<div class="submenu">
+									<ul class="menu submenu__list">
+										<li class="submenu__item">
+											<a class="submenu__link" href="https://exrates.me/funds/balances" target="blank">
+												<span class="menu__link-text">Balances</span>
+											</a>
+										</li>
+										<li class="submenu__item">
+											<a class="submenu__link" href="https://exrates.me/funds/transaction-history" target="blank">
+												<span class="menu__link-text">Transaction history</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							
+						</li>
+						<li>
+							<div class="drop">
+								<a href="#"><span>Orders</span></a>
+								<div class="submenu">
+									<ul class="menu submenu__list">
+										<li class="submenu__item">
+											<a class="submenu__link" href="https://exrates.me/orders/open" target="blank">
+												<span class="menu__link-text">Open orders</span>
+											</a>
+										</li>
+										<li class="submenu__item">
+											<a class="submenu__link" href="https://exrates.me/funds/orders/closed" target="blank">
+												<span class="menu__link-text">Orders history</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							
+						</li>
+
+						<li>
+							<a href="/index.html" class="active"><span>About us</span></a>
 						</li>
 						<li>
 							<a href="/form-listing.html"><span>Apply to list</span></a>
@@ -31,9 +72,9 @@
 						<li>
 							<a href="https://exrates.me/news"><span>News</span></a>
 						</li>	
-						<li>
+						<!-- <li>
 							<a href="#"><span>Announcments</span></a>
-						</li>
+						</li> -->
 						<li>
 							<div class="drop">
 								<a href="#"><span>Community</span></a>
@@ -80,9 +121,9 @@
 					</div>
 					<!-- end not auth user -->
 
-			
+
 					<!-- start auth user -->
-					<div class="account">
+					<!-- <div class="account">
 						<span class="login-menu__icon">
 							<svg fill="none" height="18" viewBox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
 								<g clip-path="url(#clip0)">
@@ -96,12 +137,24 @@
 								</defs>
 							</svg>
 						</span>
-					</div>
+						<div class="login-menu__submenu">
+							<div class="login-menu__submenu-item">
+								<div class="item-title">Account</div>
+								<span>lexesss64@gmail.com</span>
+							</div>
+							<div class="login-menu__submenu-item">
+								<div class="item-title">Estimated Holdings</div>
+								<span> $0.0 </span>
+							</div>
+							<a class="menu__link login-menu__link" href="https://exrates.me/settings"><span class="menu__link-text">Settings</span></a>
+							<a class="menu__link login-menu__link menu__link--auth--log"><span class="menu__link-text">Log out</span></a>
+						</div>
+					</div> -->
 					<!-- end auth user -->
 
-					<div class="lang drop">
-						<button><span class="cur-lang">English</span></button>
-						<div class="submenu">
+					<!-- <div class="lang drop"> -->
+						<!-- <button><span class="cur-lang">English</span></button> -->
+						<!-- <div class="submenu">
 							<ul class="menu submenu__list">
 								<li class="submenu__item">
 									<a class="submenu__link">
@@ -114,8 +167,8 @@
 									</a>
 								</li>
 							</ul>
-						</div>
-					</div>
+						</div> -->
+					<!-- </div> -->
 					<div class="translate">
 						<button class="translate__trigger">
 							<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -171,6 +224,27 @@
 				<a class="menu-mob__link" href="https://exrates.me/dashboard">
 					<span class="menu-mob__link-text">Trade</span>
 				</a>
+				<div class="menu-mob__drop-wrap">
+					<a class="menu-mob__link menu-mob__link--drop menu-mob__link--active">
+						<span class="menu-mob__link-text">Funds</span>
+					</a>
+					<div class="menu-mob__wrap-links">
+						<a class="menu-mob__link" href="https://exrates.me/funds/balances">Balances</a>
+						<a class="menu-mob__link" href="https://exrates.me/funds/transaction-history" target="blank">Transaction history</a>
+
+					</div>
+				</div>
+				<div class="menu-mob__drop-wrap">
+					<a class="menu-mob__link menu-mob__link--drop menu-mob__link--active">
+						<span class="menu-mob__link-text">Orders</span>
+					</a>
+					<div class="menu-mob__wrap-links">
+						<a class="menu-mob__link" href="https://exrates.me/orders/open">Open orders</a>
+						<a class="menu-mob__link" href="https://exrates.me/funds/orders/closed">Orders history</a>
+
+					</div>
+				</div>
+
 				<a class="menu-mob__link" href="/">
 					<span class="menu-mob__link-text">About us</span>
 				</a>
@@ -186,9 +260,9 @@
 				<a class="menu-mob__link" href="https://exrates.me/news">
 					<span class="menu-mob__link-text">News</span>
 				</a>
-				<a class="menu-mob__link" href="#">
+				<!-- <a class="menu-mob__link" href="#">
 					<span class="menu-mob__link-text">Announcments</span>
-				</a>
+				</a> -->
 				<div class="menu-mob__drop-wrap">
 					<a class="menu-mob__link menu-mob__link--drop menu-mob__link--active">
 						<span class="menu-mob__link-text">Community</span>
@@ -214,3 +288,6 @@
 		</div>
 	</div>
 </header>
+
+
+
