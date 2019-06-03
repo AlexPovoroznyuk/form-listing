@@ -11,6 +11,7 @@ Main style file
 /* Put you custom styles below */
 
 @import "./components/_general.pcss";
+/*@import "./components/crop.pcss";*/
 @import "./components/_header.pcss";
 @import "./components/_footer.pcss";
 
@@ -26,3 +27,4 @@ Main style file
 @import "components/_about-us.pcss";
 @import "components/_support-center.pcss";
 @import "./components/_become-advisor.pcss";
+@import "./components/_advisor-rorm.pcss";

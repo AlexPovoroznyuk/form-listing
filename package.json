@@ -14,11 +14,12 @@
     "bootstrap": "^4.0.0-beta.2",
     "bootstrap-validator": "^0.11.9",
     "jquery": "^3.2.1",
+    "jquery-jcrop": "^0.9.13",
+    "jquery.maskedinput": "^1.4.1",
     "malihu-custom-scrollbar-plugin": "^3.1.5",
     "normalize.css": "^7.0.0",
     "popper.js": "^1.12.8",
-    "slick-carousel": "^1.8.1",
-    "jquery.maskedinput": "^1.4.1"
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "amdefine": "^1.0.1",
