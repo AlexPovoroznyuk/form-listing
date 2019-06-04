@@ -28,3 +28,5 @@ Main style file
 @import "components/_support-center.pcss";
 @import "./components/_become-advisor.pcss";
 @import "./components/_advisor-rorm.pcss";
+@import "./components/_modals.pcss";
+

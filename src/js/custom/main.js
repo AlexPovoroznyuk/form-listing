@@ -51,11 +51,11 @@ document.addEventListener('scroll', function (e) {
 
 var openChat;
 document.addEventListener("DOMContentLoaded", function() {
-  openChat = function() {
-    var chatEl = document.getElementById("launcher");
-    var iframeDoc = chatEl.contentWindow.document.body.getElementsByTagName("button")[0];
-    iframeDoc.click();
-  }
+	openChat = function() {
+		var chatEl = document.getElementById("launcher");
+		var iframeDoc = chatEl.contentWindow.document.body.getElementsByTagName("button")[0];
+		iframeDoc.click();
+	}
 });
 
 
@@ -205,11 +205,14 @@ $("form").on("submit", function(e){
 			data: formData,
 			
 			success : function( data ) {
-				$(".thk-modal").addClass("active");
-				$("body").addClass("modal-open");
-				if(that.hasClass("list-form")){
+				
+				if(that.hasClass("nomodal")){
 					$("body").removeClass("modal-open");
 					$(".list-form .success-mess").addClass("active");
+				}
+				else{
+					$(".thk-modal").addClass("active");
+					$("body").addClass("modal-open");	
 				}
 				
 				that.find(".form-input").each(function(){
@@ -217,12 +220,15 @@ $("form").on("submit", function(e){
 				});
 			},
 			error   : function( xhr, err , data ) {
-				$(".err-modal").addClass("active");
-				$("body").addClass("modal-open");
-				console.log(that)
-				if(that.hasClass("list-form")){
+				
+				if(that.hasClass("nomodal")){
 					$("body").removeClass("modal-open");
 					$(".list-form .success-mess").addClass("active");
+				}
+				else{
+					$(".err-modal").addClass("active");
+					$("body").addClass("modal-open");
+
 				}
 			}
 		});
