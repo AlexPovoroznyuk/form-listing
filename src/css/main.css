@@ -5,7 +5,7 @@ Main style file
 /* Put your vendor styles here */
 
 @import "../../node_modules/normalize.css/normalize.css";
-@import "../../node_modules/bootstrap/dist/css/bootstrap.css";
+@import "../../node_modules/bootstrap/dist/css/bootstrap-reboot.min.css";
 
 
 /* Put you custom styles below */
@@ -29,4 +29,6 @@ Main style file
 @import "./components/_become-advisor.pcss";
 @import "./components/_advisor-rorm.pcss";
 @import "./components/_modals.pcss";
+@import "./components/_analitics.pcss";
+@import "./components/_analitics-detail.pcss";
 

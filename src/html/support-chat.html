@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+@@include('./components/_head.html')
+<body style="background-color: #191a39;">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WHBHRK6"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+
+        <main>
+
+            <script type="text/javascript">
+                var openChat;
+                var $zopim = "";
+                document.addEventListener("DOMContentLoaded", function() {
+                    openChat = function() {
+                        console.log(document.getElementById("launcher") !==null)
+                        if(document.getElementById("launcher") !==null){
+                            var chatEl = document.getElementById("launcher");
+                            var iframeDoc = chatEl.contentWindow.document.body.getElementsByTagName("button")[0];
+                            iframeDoc.click();
+                        }
+
+                    }
+                });
+                var zCh = function(){
+                    if($zopim == ''){
+                        setTimeout(function(){
+
+                            console.log("ef")
+                            zCh();
+                        },200);
+                    }
+                    else{
+                        $zopim(function(){
+                            zE('webWidget', 'setLocale', 'en');
+                            $zopim.livechat.addTags('EXRATES');
+                            setTimeout(function(){
+                                openChat();
+                            },100)
+                        });
+                    }
+                }
+                
+                zCh();
+                
+
+            </script>
+            <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=78adf70e-5079-4b7b-8bcd-f2781bcb8611" async> </script>
+        </main>
+    </body>
+    </html>

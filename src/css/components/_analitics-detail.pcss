@@ -1,0 +1,270 @@
+.fb-comments{
+	background-color: #fff;
+	/* display: none!important;
+	&.destop{
+		@media(min-width: 568px){
+			display: block!important;
+		}
+	}
+	&.mobile{
+		@media(max-width: 567px){
+			display: block!important;
+		}
+		} */
+
+	}
+	.comments{
+		padding: 3em 4em;
+		width: 100%;
+		background-color: #fff;
+		max-width: 68.6em;
+		margin: 0 auto;
+		@media(max-width: 992px){
+			padding: 10px;
+		}
+	}
+
+
+	.analitics-detail{
+		.a-d-inner{
+			max-width: 67em;
+			margin: 0 auto;
+			background: #252543;
+			border-radius: 4px;
+			padding: .85em 1.5em;
+			margin-top: 1.2em;
+			@media(max-width: 992px){
+				font-size: 1.2em;
+				padding:.85em  15px;
+			}
+		}
+		.head-part{
+			margin-bottom: .5em;
+			h4{
+				font-weight: 400;
+				font-size: .9em;
+				line-height: 1.15;
+				color: #FFFFFF;
+
+			}
+		}
+		.coin{
+			margin-bottom: .5em;
+			a{
+				font-weight: 400;
+				font-size: .7em;
+				line-height: 1.15;
+				color: #00A3FF;
+				display: block;
+			}
+		}
+		.date{
+			margin-bottom: .5em;
+			p{
+				font-weight: 400;
+				font-size: .65em;
+				line-height: 1.15;
+				color: #AAB1C4;
+			}
+		}
+		.img-wr{
+			display: flex;
+			flex-wrap: wrap;
+			&.col2{
+				img{
+					width: calc(50% - .43em);
+					@media(max-width: 720px){
+						width: 100%;
+						margin-bottom: .85em;
+					}
+					display: block;
+					@media(min-width: 721px){
+						&:nth-child(odd){
+							margin-right: .8em;
+						}
+					}
+
+				}
+			}
+			img{
+				width: 100%;
+				display: block;
+				margin-bottom: .8em;
+			}
+		}
+		.sharing-part{
+
+			display: flex;
+			align-items: center;
+			margin-bottom: 1em;
+		}
+		.labels{
+			display: flex;
+			@media(max-width: 420px){
+				flex-direction: column;
+			}
+		}
+		.label-item{
+			background: #464A66;
+			border-radius: 2px;
+			padding: .3em .4em;
+			margin-right: .5em;
+			display: flex;
+			align-items: center;
+			transition: .3s;
+			&:hover{
+				background: #AAB1C4;
+				span{
+					color: #252543;
+				}
+			}
+			@media(max-width: 420px){
+				&:not(:last-child){
+					margin-bottom: .5em;
+				}
+				margin-right: 0;
+				font-size: 1.2em;
+			}
+			span{
+				transition: .3s;
+				font-size: .6em;
+				line-height: .9;
+				display: block;
+				color: #7E849A;
+			}
+		}
+		.description{
+			margin-bottom: 2em;
+			p{
+				font-weight: 300;
+				font-size: .75em;
+				line-height: 1.6;
+				color: #AAB1C4;
+				/* display: flex;
+				align-items: center;
+				@media(max-width: 719px){
+					flex-wrap: wrap;
+				} */
+				img{
+					max-width: 100%;
+					/* width: 50%; */
+					/* height: auto; */
+					margin: 1em 0;
+					display: inline-block;
+					/* @media(max-width: 719px){
+						width: 100%;
+					}
+					@media(min-width: 720px){
+						&:nth-child(even){
+							margin-left: 1em;
+						}
+					} */
+					
+				}
+			}
+		}
+		.trade{
+			border: 1px solid #464A66;
+			border-radius: 4px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 2.4em 1em;
+			margin-bottom: 4.4em;
+			@media(max-width: 992px){
+				flex-direction: column;
+				border: none;
+				padding: 0;
+				margin-bottom: 2.5em;
+				text-align: center;
+
+			}
+			p,a{
+				font-weight: 400;
+				font-size: 1.2em;
+				line-height: 1.15;
+				color: #AAB1C4;
+				a{
+					transition: .3s;
+					font-size: 1em;
+					&:hover{
+						color: #237bef;
+					}
+				}
+				@media(max-width: 992px){
+					margin-bottom: 1em;
+				}
+			}
+			.button-wr{
+				width: 14em;
+
+				a{
+					span{
+						font-size: 1.15em;
+					}
+				}
+			}
+
+		}
+		.share-btns{
+			margin: 0 auto 6em;
+			display: flex;
+			max-width: 37em;
+			@media(max-width: 720px){
+				max-width: unset;
+				font-size: .8em;
+			}
+			@media(max-width: 460px){
+				flex-direction: column;
+			}
+			a{
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				padding: .5em .7em;
+				&:hover{
+					span{
+						color: #fff;
+
+					}
+					path{
+						fill: #fff;
+					}
+				}
+				@media(min-width: 461px){
+					&:not(:last-child){
+						margin-right: 1.2em;
+					}	
+				}
+
+				@media(max-width: 460px){
+					margin-bottom: .85em;
+				}
+				span{
+					transition: .2s;
+					margin-right: .25em;
+					color: #AAB1C4;
+				}
+				svg{
+					margin-right: .25em;
+					margin-left: .15em;
+					path{
+						transition: .2s;
+					}
+				}
+			}
+		}
+		.view{
+			margin-left: auto;
+			display: flex;
+			svg{
+				display: block;
+				margin-right: .25em;
+			}
+			p{
+				font-size: .6em;
+				line-height: 1.15;
+				color: #60647D;
+			}
+		}
+	}

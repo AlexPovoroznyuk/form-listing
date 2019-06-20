@@ -1,34 +1,42 @@
 <div class="scripts">
 	<!-- Set JS assets-->
+	<!-- <script type="text/javascript">
+		WebFontConfig = {
+			google: { families: [ 'Roboto:300,400,500,600' ] }
+		};
+		(function() {
+			var wf = document.createElement('script');
+			wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+			wf.type = 'text/javascript';
+			wf.async = 'true';
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(wf, s);
+		})(); 
+	</script> -->
+
+	<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script>
 	<script type="text/javascript">
 		function googleTranslateElementInit() {
 			new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
 		}
 	</script>
-	<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async=""></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
-	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
-
-
-	<script type="text/javascript" src="http://jcrop-cdn.tapmodo.com/v0.9.12/js/jquery.Jcrop.min.js"></script>
 	<script type="text/javascript">
-		zE('webWidget', 'setLocale', 'en');
+		(function() {
+			console.log(document.documentElement.clientWidth)
+			if(document.documentElement.clientWidth > 992){
+				var wf = document.createElement('script');
+				wf.id = 'ze-snippet';
+				wf.src = 'https://static.zdassets.com/ekr/snippet.js?key=78adf70e-5079-4b7b-8bcd-f2781bcb8611';
+				wf.type = 'text/javascript';
+				wf.async = 'true';
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(wf, s);
+			}
+		})();
 	</script>
 
-	<script type="text/javascript">
-		setTimeout(function(){
-			$zopim(function(){
+	<!-- <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=78adf70e-5079-4b7b-8bcd-f2781bcb8611" async> </script> -->
 
-				$zopim.livechat.addTags('НАЗВАНИЕ БИРЖИ');
-
-			});
-		},1000)
-		
-
-
-	</script>
-	<!-- Start of starexchangealliance Zendesk Widget script -->
-	<!-- End of starexchangealliance Zendesk Widget script -->
 	<script src="js/vendor-bundle.min.js"></script>
 	<script src="js/custom-bundle.min.js"></script>
 </div>

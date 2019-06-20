@@ -60,12 +60,16 @@
                 <h4>submit a request </h4>
             </div>
             <form action="#" class="list-form" enctype="multipart/form-data">
-                <div class="drop-wr">
+                <div class="drop-wr" tabindex="0">
                     <div class="wrap-input input-item popup__wrap-input">
-                        <input class="wrap-input__input ng-dirty ng-valid ng-touched form-input"
-                        autocomplete="new-password" type="text" name="select" id="select" value="1" readonly>
+
+                        <!-- change item -->
+                        <input class="wrap-input__input ng-dirty ng-valid ng-touched form-input reqiered-field drop-input"
+                        autocomplete="new-password" type="text" name="select" id="select" value="" readonly>
+                         <!--end change item -->
                         <label class="wrap-input__label" for="select">Choose the topic of your request</label>
-                        <label class="select-txt" for="select"><span class="standart-text">Funds Withdrawal</span></label>
+                        <label class="select-txt" for="select"><span class="standart-text"></span></label>
+                        <label class="error" for="email"><span class="standart-text"></span></label>
                     </div>
                     <div class="dropdown">
                         <div class="dropdown-item">
